@@ -25,12 +25,31 @@
     font-size: 15px;
 }
 
-.rounded-corners {border-radius: 50px}
+.font-size-topic {
+    font-size: 13px;
+}
+
+.font-post {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.size-100px {
+    height: 100px;
+    width: 100px;
+}
+
+.rounded-corners {border-radius: 12px}
 
 .padded-left {padding-left: 36px}
 .padded-right {padding-right: 12px}
+.padded-right-4 {padding-right:4px}
 .padded-top {padding-top: 4px}
 .padded-link {padding: 16px}
+.padded-post {
+    padding: 12px 0px 12px 0px;
+}
 
 .wd-search{
     width: calc(100% - 48px);
@@ -56,6 +75,11 @@
 .border-bottom-grey {
     border-bottom: 2px solid;
     border-bottom-color: #6e767d;
+}
+
+.border-bottom-darkgrey-thin {
+    border-bottom: 1px solid;
+    border-bottom-color: #363636;
 }
 
 .float-left{
