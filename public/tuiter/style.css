@@ -24,9 +24,18 @@
 .wd-fg-gr {
     color: #6e767d;
 }
+.wd-fg-red{
+    color: #ff0000;
+}
 
 .wd-font-link {
     font-size: 15px;
+}
+
+.wd-font-author {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
 }
 
 .wd-font-topic {
@@ -38,6 +47,20 @@
     font-size: 16px;
 }
 
+.wd-font-bookmark {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-font-summary {
+    font-size: 15px;
+    color: #6e767d;
+}
+
+.wd-max-wd-506 {
+    max-width: 506px;
+}
+
 .wd-font-title{
     font-weight: bold;
     font-size: 13px;
@@ -47,6 +70,16 @@
     color: lightgrey;
 }
 
+.wd-font-heading {
+    font-size: 20px;
+    color: white;
+}
+
+.wd-font-handle {
+    font-size: 13px;
+    color: #6e767d;
+}
+
 .wd-image-100x100 {
     height: 100px;
     width: 100px;
@@ -54,14 +87,35 @@
     padding-right: 4px;
 }
 
+.wd-image-circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.wd-image-bookmark {
+    height: 264px;
+    width: 504px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
 .wd-pd-top {padding-top: 4px}
+.wd-pd-top12 {padding-top: 12px}
 .wd-pd-link {padding: 16px}
 .wd-pd-post {
     padding: 12px 0px 12px 0px;
 }
-
+.wd-pd-left {padding-left: 12px}
+.wd-pd-right {
+    padding-right: 12px;
+}
 .wd-post{
     width: calc(100% - 116px);
+}
+
+.wd-bookmark-wd {
+    width: calc(100% - 64px);
 }
 
 .wd-min-550{
@@ -104,4 +158,13 @@
 }
 .wd-float-done{
     clear: both;
+}
+.wd-grid-quarter {
+    float: left;
+    width: 25%;
+}
+
+.wd-rounded-bottom{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
