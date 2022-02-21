@@ -33,9 +33,8 @@
 }
 
 .wd-font-author {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
-    color: white;
 }
 
 .wd-font-topic {
@@ -76,7 +75,7 @@
 }
 
 .wd-font-handle {
-    font-size: 13px;
+    font-size: 16px;
     color: #6e767d;
 }
 
@@ -122,16 +121,8 @@
     min-width: 550px;
 }
 
-.wd-search {
-    height: 24px;
-    text-indent: 36px;
-    background-color: #282c34;
-    border: 0;
-    border-radius: 12px;
-}
-
 .wd-bar-width {
-    width: calc(100% - 30px);
+    width: calc(100% - 50px);
 }
 
 .wd-bd-active {
@@ -167,4 +158,32 @@
 .wd-rounded-bottom{
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+}
+
+.fa-stack.small { font-size: 0.5em;}
+
+.btn.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn.btn-full {
+    width: 100%;
+}
+
+.btn.wd-follow {
+    position: absolute;
+    bottom: 12px;
+    right: 6px;
+}
+
+.form-control.wd-search{
+    border-radius: 50px;
+    height: 2em;
+    text-indent: 36px;
+    width: 100%;
+}
+
+.wd-front{
+    position: relative;
+    z-index: 10;
 }
