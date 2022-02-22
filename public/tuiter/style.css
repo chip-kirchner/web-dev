@@ -79,9 +79,9 @@
     color: #6e767d;
 }
 
-.wd-image-100x100 {
-    height: 100px;
-    width: 100px;
+.wd-image-84x84 {
+    height: 84px;
+    width: 84px;
     border-radius: 12px;
     padding-right: 4px;
 }
@@ -186,4 +186,15 @@
 .wd-front{
     position: relative;
     z-index: 10;
+}
+
+.btn.wd-center {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.wd-full-width {
+    width: 100%;
 }
