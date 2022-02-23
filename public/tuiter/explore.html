@@ -1,104 +1,275 @@
-<!DOCTYPE html>
-<head>
-    <link href="style.css" rel="stylesheet"/>
-    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-</head>
-<body class="wd-bg-color-black">
-    <div class="wd-parent">
-        <div class="wd-float-left wd-bar-width">
-            <input class="wd-search wd-bar-width" type="text" placeholder="Search Tuiter"/>
-            <i class="fa fa-search wd-fg-gr wd-pos-absolute"></i>
-        </div>
-        <div class="wd-float-right wd-settings">
-            <a href="explore-settings.html"><i class="fa fa-cog"></i></a>
-        </div>
-    </div>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-1">
+                <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2">
+                    <div class="list-group">
+                        <span class="list-group-item"><i class="fab fa-twitter"></i></span>
+                        <a href="home.html" class="list-group-item list-group-item-action">
+                            <i class="fas fa-home"></i>
+                            <span class="d-none d-xl-inline">Home</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            <i class="fas fa-hashtag"></i>
+                            <span class="d-none d-xl-inline">Explore</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-bell"></i>
+                            <span class="d-none d-xl-inline">Notifications</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-envelope"></i>
+                            <span class="d-none d-xl-inline">Messages</span>
+                        </a>
+                        <a href="bookmarks.html" class="list-group-item list-group-item-action">
+                            <i class="fas fa-bookmark"></i>
+                            <span class="d-none d-xl-inline">Bookmarks</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="fas fa-list"></i>
+                            <span class="d-none d-xl-inline">Lists</span>
+                        </a>
+                        <a href="profile.html" class="list-group-item list-group-item-action">
+                            <i class="fas fa-user"></i>
+                            <span class="d-none d-xl-inline">Profile</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <span class="fa-stack small">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="d-none d-xl-inline">More</span>
+                        </a>
+                    </div>
 
-    <div class="wd-parent">
-        <div class="wd-bottom">
-            <div class="wd-float-left wd-font-link wd-pd-link wd-fg-bl wd-bd-active">For You</div>
-            <div class="wd-float-left wd-font-link wd-pd-link wd-fg-gr">Trending</div>
-            <div class="wd-float-left wd-font-link wd-pd-link wd-fg-gr">COVID-19</div>
-            <div class="wd-float-left wd-font-link wd-pd-link wd-fg-gr">News</div>
-            <div class="wd-float-left wd-font-link wd-pd-link wd-fg-gr">Sports</div>
-            <div class="wd-float-left wd-font-link wd-pd-link wd-fg-gr">Entertainment</div>
-            <div class="wd-float-done"></div>
-        </div>
-    </div>
+                    <button class="mt-1 btn btn-primary btn-rounded btn-full">
+                        Tuit
+                    </button>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                    <i class="fa fa-search ms-2 mt-2 position-absolute"></i>
+                    <div class="row">
+                        <div class="col-11">
+                            <input class="form-control wd-search" type="text" placeholder="Search Tuiter"/>
+                        </div>
+                        <div class="col-1">
+                            <a href="explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="for-you.html">For You</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trending.html">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sports.html">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entertainment.html">Entertainment</a>
+                        </li>
+                    </ul>
 
-    <div class="wd-parent">
-    <div class="wd-pd-post wd-fg-wh dg-color-darkgrey wd-bottom-thin">
-        <div class="wd-font-topic wd-fg-gr">Trending in Science</div>
-        <div class="wd-font-post wd-fg-wh wd-pd-top">Swimming Pterodactyls</div>
-    </div>
-    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div class="position-relative">
+                                <img class="wd-full-width" src="starship.jpg"/>
+                                <div class="position-absolute bottom-0 start-0 ms-1 mb-1 text-white fs-1">Spacex Starship</div>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="wd-parent">
-        <div class="wd-pd-post wd-fg-wh wd-bottom-thin">
-            <div class="wd-float-left wd-post">
-                <div class="wd-font-topic wd-fg-gr">Trending in Tech</div>
-                <div class="wd-pd-top wd-font-post wd-fg-wh">Why testing to make sure this really long line fits the way I want it to is actually incredibly important to managing my layout OCD</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="flex-grow-1 pe-3">
+                                    <div class="text-muted">
+                                        Web Development
+                                    </div>
+                                    <div>
+                                        <span class="fw-bolder">
+                                            ReactJS
+                                        </span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <span class="text-muted"> - 2h</span>
+                                    </div>
+                                    <div class="fw-bold fs-6">
+                                        React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img class="ms-2 wd-image-84x84" src="react.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="flex-grow-1 pe-3">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            JavaScript
+                                        </span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <span class="text-muted"> - 2h</span>
+                                    </div>
+                                    <div class="fw-bold fs-6">
+                                        Javascript is a programming language that can run on browsers as well as desktops
+                                    </div>
+                                    <div class="text-muted">
+                                        123k Tuits
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img class="ms-2 wd-image-84x84" src="javascript.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="flex-grow-1 pe-3">
+                                    <div class="text-muted">
+                                        Web Development
+                                    </div>
+                                    <div>
+                                        <span class="fw-bolder">
+                                            jQuery
+                                        </span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <span class="text-muted"> - 2h</span>
+                                    </div>
+                                    <div class="text-muted">
+                                        123k Tuits
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img class="ms-2 wd-image-84x84" src="jquery.png">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="flex-grow-1 pe-3">
+                                    <div class="text-muted">
+                                        Web Development
+                                    </div>
+                                    <div>
+                                        <span class="fw-bolder">
+                                            NodeJS
+                                        </span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <span class="text-muted"> - 2h</span>
+                                    </div>
+                                    <div class="text-muted">
+                                        123k Tuits
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img class="ms-2 wd-image-84x84" src="nodejs.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
+                    <ul class="list-group">
+                        <li class="list-group-item">Who to follow</li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="java.jpg" class="wd-image-circle">
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <span class="fw-bold wd-front">Java</span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text-secondary">@Java</div>
+                                    <button class="position-absolute top-50 end-0 translate-middle-y me-2 btn btn-primary btn-rounded"> Follow </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="relativity.jpg" class="wd-image-circle">
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <span class="fw-bold wd-front">Relativity Space</span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text-secondary">@relativityspace</div>
+                                    <button class="position-absolute top-50 end-0 translate-middle-y me-2 btn btn-primary btn-rounded"> Follow </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="virgin.png" class="wd-image-circle">
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <span class="fw-bold wd-front">Virgin Galactic</span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text-secondary">@virgingalactic</div>
+                                    <button class="position-absolute top-50 end-0 translate-middle-y me-2 btn btn-primary btn-rounded"> Follow </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="nasa.png" class="wd-image-circle">
+                                </div>
+                                <div class="col-10">
+                                    <button class="position-absolute top-50 end-0 translate-middle-y me-2 btn btn-primary btn-rounded"> Follow </button>
+                                    <div>
+                                        <span class="fw-bold wd-front">NASA</span>
+                                        <span class="fa-stack small">
+                                            <i class="fas fa-certificate fa-stack-2x"></i>
+                                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="text-secondary">@NASA</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="wd-float-right">
-                <img class="wd-image-100x100" src="https://thedailycrazy.files.wordpress.com/2010/01/binary.jpg">
-            </div>
-            <div class="wd-float-done"></div>
         </div>
-    </div>
-
-    <div class="wd-parent">
-        <div class="wd-pd-post wd-fg-wh wd-bottom-thin">
-            <div class="wd-float-left wd-post">
-                <div class="wd-float-left wd-font-title wd-fg-wh">New York Times</div>
-                <div class="wd-float-left wd-font-post wd-fg-gr">&nbsp; &CenterDot; &nbsp;</div>
-                <div class="wd-float-left wd-font-topic wd-fg-gr">Trending</div>
-                <div class="wd-float-done"></div>
-                <div class="wd-pd-top wd-font-post wd-fg-wh">Discovery that Pterodactyls Actually Swam Rocks the World of Science</div>
-            </div>
-            <div class="wd-float-right">
-                <img class="wd-image-100x100" src="https://live.staticflickr.com/7747/18218811951_e05f0ce95e_z.jpg">
-            </div>
-            <div class="wd-float-done"></div>
-        </div>
-    </div>
-
-    <div class="wd-parent">
-        <div class="wd-pd-post wd-fg-wh wd-bottom-thin">
-            <div class="wd-float-left wd-post">
-                <div class="wd-float-left wd-font-title wd-fg-wh">The Post</div>
-                <div class="wd-float-left wd-font-post wd-fg-gr">&nbsp; &CenterDot; &nbsp;</div>
-                <div class="wd-float-left wd-font-topic wd-fg-gr">Trending in Mail</div>
-                <div class="wd-float-done"></div>
-                <div class="wd-pd-top wd-font-post wd-fg-wh">Some Packages Just Take That Long to Arrive and Its OK</div>
-            </div>
-            <div class="wd-float-right">
-                <img class="wd-image-100x100" src="https://farm7.staticflickr.com/6198/6136528689_01099bfdc7_z.jpg">
-            </div>
-            <div class="wd-float-done"></div>
-        </div>
-    </div>
-
-    <div class="wd-parent">
-        <div class="wd-pd-post wd-fg-wh wd-bottom-thin">
-            <div class="wd-font-topic wd-fg-gr">Podcasts</div>
-            <div class="wd-font-post wd-fg-wh wd-pd-top">New Video Only Podcast Platform Strikes Gold</div>
-        </div>
-    </div>
-
-    <div class="wd-parent">
-        <div class="wd-pd-post wd-fg-wh wd-bottom-thin">
-            <div class="wd-float-left wd-post">
-                <div class="wd-font-topic wd-fg-gr">Trending in Science</div>
-                <div class="wd-pd-top wd-font-post wd-fg-wh">Carnivorous Roses</div>
-            </div>
-            <div class="wd-float-right">
-                <img class="wd-image-100x100" src="https://c1.staticflickr.com/1/185/429190788_96f3bdefa2_b.jpg">
-            </div>
-            <div class="wd-float-done"></div>
-        </div>
-    </div>
-
-</body>
-
+    </body>
 </html>
