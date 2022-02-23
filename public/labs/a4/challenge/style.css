@@ -1,0 +1,95 @@
+.wd-image-84x84 {
+    height: 84px;
+    width: 84px;
+    border-radius: 12px;
+    padding-right: 4px;
+}
+
+.wd-image-circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.fa-stack.small { font-size: 0.5em;}
+
+.btn.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn.btn-full {
+    width: 100%;
+}
+
+.btn.follow {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-color: white;
+}
+
+.fa-dark-mode {
+    color: darkslategrey;
+}
+
+.form-control.wd-search{
+    border-radius: 50px;
+    height: 2em;
+    text-indent: 36px;
+    width: 100%;
+    background-color: #282c34;
+    border-width: 0px;
+}
+
+.wd-front{
+    position: relative;
+    z-index: 10;
+}
+
+.btn.wd-center {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.wd-full-width {
+    width: 100%;
+}
+
+.list-group-item{
+    background-color:black;
+    color: white;
+}
+
+.list-group-item.link{
+    color:lightgrey;
+}
+
+.list-group-item.active{
+    background-color: black;
+    border-color: black;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+body {
+    background-color: black;
+}
+
+.nav-link{
+    color: darkgrey;
+    border-color: black;
+}
+
+.nav-link.dark-mode{
+    background-color: black;
+    color:white;
+    border-bottom: 3px solid;
+    border-bottom-color: #1da1f2;
+}
+
+.nav-tabs {
+    border-color: black;
+}
+
