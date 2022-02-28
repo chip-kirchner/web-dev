@@ -25,3 +25,17 @@
     background-color: #282c34;
     border-width: 0px;
 }
+
+.wd-rounded-bottom {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.wd-rounded-top {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.wd-rounded {
+    border-radius: 12px;
+}
