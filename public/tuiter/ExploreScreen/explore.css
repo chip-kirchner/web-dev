@@ -1,0 +1,30 @@
+.fa-stack.small { font-size: 0.5em;}
+
+.wd-image-circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.wd-image-84x84 {
+    height: 84px;
+    width: 84px;
+    border-radius: 12px;
+    padding-right: 4px;
+}
+
+.wd-full-width {
+    width: 100%;
+}
+
+.form-control.wd-search{
+    border-radius: 50px;
+    height: 2em;
+    text-indent: 36px;
+    width: 100%;
+    background-color: #282c34;
+    border-width: 0px;
+}
+.fa-dark-mode {
+    color: darkslategrey;
+}
