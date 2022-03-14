@@ -27,7 +27,7 @@ const NavigationSidebar = (
                     <i className="fas fa-envelope"></i>
                     <span className="d-none d-xl-inline"> Messages</span>
                 </Link>
-                <Link to="/bookmarks.html" className={`list-group-item ${active==='bookmarks' ? 'active' : ''}`}>
+                <Link to="#" className={`list-group-item ${active==='bookmarks' ? 'active' : ''}`}>
                     <i className="fas fa-bookmark"></i>
                     <span className="d-none d-xl-inline"> Bookmarks</span>
                 </Link>
@@ -35,7 +35,7 @@ const NavigationSidebar = (
                     <i className="fas fa-list"></i>
                     <span className="d-none d-xl-inline"> Lists</span>
                 </Link>
-                <Link to="/profile.html" className={`list-group-item ${active==='profile' ? 'active' : ''}`}>
+                <Link to="#" className={`list-group-item ${active==='profile' ? 'active' : ''}`}>
                     <i className="fas fa-user"></i>
                     <span className="d-none d-xl-inline"> Profile</span>
                 </Link>
