@@ -39,7 +39,7 @@ const ExploreComponent = (
             <div className="row mt-2">
                 <div className="col-12">
                     <div className="position-relative">
-                        <img className="wd-full-width" src={image}/>
+                        <img className="wd-full-width" src={image} alt={title}/>
                         <div className="position-absolute bottom-0 start-0 ms-1 mb-1 text-white fs-1">{title}</div>
                     </div>
                 </div>
