@@ -5,8 +5,8 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 
-import HelloWorld from "./components/HelloWorld";
-import Labs from "./components/Labs";
+import HelloWorld from "./components/hello-world";
+import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
 import ExploreScreen from "./components/tuiter/explore-screen";
 import HomeScreen from "./components/tuiter/home-screen";
