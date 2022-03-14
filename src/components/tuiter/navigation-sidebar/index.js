@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
     {
@@ -7,20 +8,21 @@ const NavigationSidebar = (
     return(
         <div>
             <div className="list-group">
-                <a className="list-group-item" href="/">
-                    <i className="fab fa-twitter"></i></a>
-                <a href="../HomeScreen/index.html" className={`list-group-item ${active==='home' ? 'active' : ''}`}>
+                <Link to="/" className = "list-group-item">
+                    <i className="fab fa-twitter"></i>
+                </Link>
+                <Link to="/tuiter/home" className={`list-group-item ${active==='home' ? 'active' : ''}`}>
                     <i className="fas fa-home"></i>
                     <span className="d-none d-xl-inline"> Home</span>
-                </a>
-                <a href="../ExploreScreen/index.html" className={`list-group-item ${active==='explore' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/explore" className={`list-group-item ${active==='explore' ? 'active' : ''}`}>
                     <i className="fas fa-hashtag"></i>
                     <span className="d-none d-xl-inline"> Explore</span>
-                </a>
-                <a href="#" className={`list-group-item ${active==='notifications' ? 'active' : ''}`}>
+                </Link>
+                <Link to="#" className={`list-group-item ${active==='notifications' ? 'active' : ''}`}>
                     <i className="fas fa-bell"></i>
                     <span className="d-none d-xl-inline"> Notifications</span>
-                </a>
+                </Link>
                 <a href="#" className={`list-group-item ${active==='messages' ? 'active' : ''}`}>
                     <i className="fas fa-envelope"></i>
                     <span className="d-none d-xl-inline"> Messages</span>
