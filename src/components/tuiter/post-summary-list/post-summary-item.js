@@ -32,7 +32,7 @@ const PostSummaryItem = (
                     </div>
                 </div>
                 <div>
-                    <img className="ms-2 wd-image-84x84" src={post.image}/>
+                    <img className="ms-2 wd-image-84x84" src={post.image} alt="post"/>
                 </div>
             </div>
         </li>

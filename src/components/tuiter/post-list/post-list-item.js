@@ -1,4 +1,3 @@
-import PostSummary from "./post-summary";
 import "./post.css";
 const PostListItem = ({
       post = {
@@ -21,7 +20,7 @@ const PostListItem = ({
             <li className="list-group-item">
                 <div className="d-flex">
                     <div className="">
-                        <img className="wd-image-circle" src={post.avatarIcon}/>
+                        <img className="wd-image-circle" src={post.avatarIcon} alt="Icon"/>
                     </div>
                     <div className="ms-1 flex-fill">
                         <div className="d-flex">
@@ -46,7 +45,7 @@ const PostListItem = ({
                             {post.text}
                         </div>
                         <div className="">
-                            <img className={`wd-full-width border-secondary ${post.topic !== '' ? 'wd-rounded-top border border-bottom-0':'border-bottom wd-rounded'}`} src={post.image}/>
+                            <img className={`wd-full-width border-secondary ${post.topic !== '' ? 'wd-rounded-top border border-bottom-0':'border-bottom wd-rounded'}`} src={post.image} alt="Post"/>
                             {post.topic !== "" ?
                                 <div className="border border-secondary wd-rounded-bottom">
                                     <div className="ms-2 me-2 mt-2"> {post.topic} </div>

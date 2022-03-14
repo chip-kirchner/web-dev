@@ -12,7 +12,7 @@ const WhoToFollowItem = (
             <li className="list-group-item">
                 <div className="row">
                      <div className="col-2">
-                        <img src={who.avatarIcon} className="wd-image-circle"/>
+                        <img src={who.avatarIcon} className="wd-image-circle" alt="avatar" />
                     </div>
                     <div className="col-10">
                         <button className="position-absolute top-50 end-0 translate-middle-y me-2 btn btn-primary rounded-pill"> Follow </button>
