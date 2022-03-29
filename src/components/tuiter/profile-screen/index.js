@@ -101,7 +101,7 @@ const ProfileScreen = () => {
                         <button onClick={saveProfileHandler} className="btn btn-dark rounded-pill">Save</button>
                     </div>
                 </div>
-                <div>
+                <div className="mt-2">
                     <img className="wd-banner-picture" src={profile.bannerPicture} alt="banner"/>
                 </div>
 
