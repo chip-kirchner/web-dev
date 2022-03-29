@@ -1,15 +1,21 @@
 
 const profileData = {
-    firstName: 'Jose', lastName: 'Annunziato', handle: 'jannunzi',
+    firstName: 'Mario', lastName: 'ThePlumber', handle: 'ItsAMario',
     profilePicture: 'images/user.png', 	bannerPicture: 'images/polyglot.jpeg',
-    bio: 'Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.',
+    bio: 'Plumbing enthusiast, long time lover of games and fun',
     website: 'youtube.com/webdevtv',
-    location: 'Boston, MA',	dateOfBirth: '7/7/1968',	dateJoined: '4/2009',
+    location: 'New York, NY',	dateOfBirth: '7/7/1848',	dateJoined: '4/2019',
     followingCount: 312,	followersCount: 180, tuitCount: 1203
 }
 
-const profileReducer = (state = profileData) => {
-    return (state);
+const profileReducer = (state = profileData, action) => {
+    switch(action.type){
+        case 'update-profile':
+            console.log(action.profile);
+            return (action.profile);
+        default:
+            return (state);
+    }
 };
 
 export default profileReducer;
