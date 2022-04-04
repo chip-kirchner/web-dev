@@ -1,15 +1,11 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit} from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
-        = useState('');
+        = useState({tuit: 'New tuit'});
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
-            tuit: whatsHappening
-        });
-    }
 
     return (
         <div className="row me-2 ms-2">
@@ -17,9 +13,9 @@ const WhatsHappening = () => {
                 <img src="images/mario1.png" className="wd-image-circle" alt="avatar" />
             </div>
             <div className="col-10">
-                <textarea className="textarea form-control wd-text-area text-secondary" value={whatsHappening}
+                <textarea className="textarea form-control wd-text-area text-secondary"
                           onChange={(event) =>
-                              setWhatsHappening(event.target.value)}
+                              setWhatsHappening({...whatsHappening, tuit: event.target.value})}
                           placeholder="What's Happening?">
                 </textarea>
                 <div className="row border-top border-secondary mt-2 mb-2">
@@ -33,7 +29,7 @@ const WhatsHappening = () => {
                         <i className="fas fa-calendar text-primary me-2"></i>
                     </span>
                     <div className="col-2 mt-2">
-                        <button className="btn btn-primary rounded-pill" onClick={tuitClickHandler}>
+                        <button className="btn btn-primary rounded-pill" onClick={() => createTuit(dispatch, whatsHappening)}>
                             Tuit
                         </button>
                     </div>

@@ -1,35 +1,37 @@
 import "./tuit.css";
 import {useDispatch} from "react-redux";
+import {deleteTuit}
+    from "../actions/tuits-actions";
 import TuitStats from "./tuit-stats";
 
+const defaultTuit = {
+    "_id": "234",
+    "topic": "Default",
+    "postedBy": {
+        "username": "Default"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "Default",
+    "postedOn": "2020-12-10",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "logo-image": "images/javascript.png",
+    "avatarIcon": "images/javascript.png",
+    "tuits": "123K",
+    "stats": {
+        "comments": 123,
+        "retuits": 234,
+        "likes": 345
+    }
+}
+
 const TuitListItem = ({
-                          tuit = {
-                              "_id": "234",
-                              "topic": "Space",
-                              "postedBy": {
-                                  "username": "Scott Manley"
-                              },
-                              "liked": true,
-                              "verified": true,
-                              "handle": "DJSnM",
-                              "postedOn": "2020-12-10",
-                              "time": "1 day",
-                              "title": "JavaScript is programming language that can run on browsers as well as desktops",
-                              "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                              "logo-image": "images/javascript.png",
-                              "avatarIcon": "images/javascript.png",
-                              "tuits": "123K",
-                              "stats": {
-                                  "comments": 123,
-                                  "retuits": 234,
-                                  "likes": 345
-                              }
-                          }
+                          tuit = defaultTuit
                       }) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
+    tuit = {...defaultTuit, ...tuit};
     return(
         <div>
             <li className="list-group-item">
@@ -57,7 +59,7 @@ const TuitListItem = ({
                                 }
                                 <span className="text-muted"> - {tuit.time}</span>
                             </div>
-                            <i onClick={() => deleteTuit(tuit)}
+                            <i onClick={() => deleteTuit(dispatch, tuit)}
                                className="fas fa-times text-muted"></i>
                         </div>
                         <div className="mt-1 mb-2">
