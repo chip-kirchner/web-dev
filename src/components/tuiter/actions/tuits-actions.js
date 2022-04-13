@@ -26,6 +26,7 @@ export const updateTuit = async (dispatch, tuit) => {
         type: UPDATE_TUIT,
         tuit
     });
+    return(status);
 }
 
 export const deleteTuit = async (dispatch, tuit) => {
@@ -34,4 +35,5 @@ export const deleteTuit = async (dispatch, tuit) => {
         type: DELETE_TUIT,
         tuit
     })
+    return(response);
 }
