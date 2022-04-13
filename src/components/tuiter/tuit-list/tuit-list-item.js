@@ -8,28 +8,24 @@ const defaultTuit = {
     "_id": "234",
     "topic": "Default",
     "postedBy": {
-        "username": "Default"
+        "username": "Default",
+        "handle": "Default",
+        "avatarIcon": "images/javascript.png",
     },
     "liked": true,
     "verified": true,
-    "handle": "Default",
-    "postedOn": "2020-12-10",
     "time": "1 day",
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "logo-image": "images/javascript.png",
-    "avatarIcon": "images/javascript.png",
-    "tuits": "123K",
     "stats": {
         "comments": 123,
         "retuits": 234,
-        "likes": 345
+        "likes": 345,
+        "dislikes": 0
     }
 }
 
-const TuitListItem = ({
-                          tuit = defaultTuit
-                      }) => {
+const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
     tuit = {...defaultTuit, ...tuit};
     return(
@@ -37,7 +33,7 @@ const TuitListItem = ({
             <li className="list-group-item">
                 <div className="d-flex">
                     <div className="">
-                        <img className="wd-image-circle" src={tuit.avatarIcon} alt="Icon"/>
+                        <img className="wd-image-circle" src={tuit.postedBy.avatarIcon === "" ? "images/user.png" : tuit.postedBy.avatarIcon} alt="Icon"/>
                     </div>
                     <div className="ms-1 flex-fill">
                         <div className="d-flex">
@@ -47,7 +43,7 @@ const TuitListItem = ({
                                     &nbsp;
                                 </span>
                                 <span className="text-muted">
-                                    @{tuit.handle}
+                                    @{tuit.postedBy.handle}
                                     &nbsp;
                                 </span>
                                 {

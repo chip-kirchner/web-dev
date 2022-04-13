@@ -1,10 +1,18 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import {useDispatch} from "react-redux";
 import {createTuit} from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
+    const who = {
+        "username": "Default User",
+        "handle": "You",
+        "avatarIcon": "images/mario1.png"
+    };
+
+    const tuitBarRef = useRef();
+
     let [whatsHappening, setWhatsHappening]
-        = useState({tuit: 'New tuit'});
+        = useState({tuit: '', postedBy: who});
     const dispatch = useDispatch();
 
     return (
@@ -14,6 +22,7 @@ const WhatsHappening = () => {
             </div>
             <div className="col-10">
                 <textarea className="textarea form-control wd-text-area text-secondary"
+                          ref={tuitBarRef}
                           onChange={(event) =>
                               setWhatsHappening({...whatsHappening, tuit: event.target.value})}
                           placeholder="What's Happening?">
@@ -29,7 +38,10 @@ const WhatsHappening = () => {
                         <i className="fas fa-calendar text-primary me-2"></i>
                     </span>
                     <div className="col-2 mt-2">
-                        <button className="btn btn-primary rounded-pill" onClick={() => createTuit(dispatch, whatsHappening)}>
+                        <button className="btn btn-primary rounded-pill" onClick={() => {
+                            createTuit(dispatch, whatsHappening);
+                            tuitBarRef.current.value = '';
+                        }}>
                             Tuit
                         </button>
                     </div>
